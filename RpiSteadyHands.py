@@ -39,6 +39,9 @@ while True:
 	print("Your off")
 # time the run to the other rest
 	penalty = 0
+	display.clear()
+	display.print_float(penalty, decimal_digits=0, justify_right=False)
+	display.write_display()		
 	run_time = time.clock()
 	while GPIO.input(end_rest) != 0:
 		if GPIO.input(wire) == 0:
